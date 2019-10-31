@@ -37,12 +37,15 @@ class _DataState extends State<Data> {
               DrawerHeader(
                 child: Center(
                   child: CircleAvatar(
-                    backgroundImage: NetworkImage("https://i.pinimg.com/originals/e3/3c/99/e33c99722766c67cee2e4d29c6eeb237.jpg"),
+                    backgroundImage: NetworkImage("https://data.whicdn.com/images/329027217/superthumb.jpg?t=1554987052"),
                     radius: 70.0,
                   ),
                 ),
                 decoration: BoxDecoration(
-                  color: Colors.yellow,
+                  image: DecorationImage(
+                    image: NetworkImage("https://cdn0-production-images-kly.akamaized.net/gCquVd6WmRO3AeNNdOA2b3AfNTM=/0x0:1280x721/640x360/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2406628/original/011793500_1542052593-44666444_1954796891496862_4877700475917850000_n.jpg"),
+                  fit: BoxFit.cover
+                  ),
                 ),
               ),
               ListTile(
@@ -64,7 +67,7 @@ class _DataState extends State<Data> {
           child: Center(
             child: ListView(
               children: <Widget>[
-                  Image.network("http://flowermanager.net/wp-content/uploads/sites/51/2015/10/mood-blog1.jpg",
+                  Image.network("https://akns-images.eonline.com/eol_images/Entire_Site/20181020/rs_1280x720-181120021856-E-Asia-Jennie-Solo-MV-Fashion-featured.jpg?fit=inside|900:auto&output-quality=90",
                   fit:BoxFit.cover,
                   width: 500.0,
                   height: 240.0,
@@ -76,12 +79,22 @@ class _DataState extends State<Data> {
                       Expanded(
                         child: Column(
                           children: <Widget>[
-                            Icon(Icons.favorite, color: Colors.red,),
-                            Text("Long love"),
+                            Text("Our wedding days",style: TextStyle(color: Colors.black),),
+                            Text("Enjoys good life",style: TextStyle(color: Colors.grey[500]),),
                           ],
                           ),
                       ),
-                      Icon(Icons.favorite, color: Colors.black,),
+                      Expanded(
+                        child: Column(
+                          children: <Widget>[
+                            Icon(Icons.favorite, color: Colors.red,),
+                            Text("Long love"),
+                          ],
+                        ),
+                      ),
+                      Icon(Icons.favorite_border, color: Colors.red,size: 20.0,),
+                      Icon(Icons.favorite_border, color: Colors.red,size: 30.0,),
+                      Icon(Icons.favorite_border, color: Colors.red,size: 40.0,),
                     ],
                   ),
                 ),
@@ -90,14 +103,14 @@ class _DataState extends State<Data> {
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: <Widget>[
                       Container(
-                        child: Image.network("https://styles.prosites.com/litesite/2280/images/panel1.jpg",
+                        child: Image.network("https://i.pinimg.com/736x/be/0f/0f/be0f0f4cfa4cc3f3258b5bce5e3266e4.jpg",
                           fit: BoxFit.cover,
                           width: 200.0,
                           height: 200.0,
                         ),
                       ),
                       Container(
-                        child: Image.network("https://vivesceramica.files.wordpress.com/2015/08/interiorismo-comercial-disec3b1o-de-tiendas-amarillo-minion1.jpg",
+                        child: Image.network("http://www.yangrame.com/wp-content/uploads/2018/10/j.jpg",
                           fit: BoxFit.cover,
                           width: 200.0,
                           height: 200.0,
@@ -105,7 +118,39 @@ class _DataState extends State<Data> {
                       ),
                     ],
                   ),
-                )
+                ),
+               Container(
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: <Widget>[
+                      Container(
+                        child: Row(
+                             children: <Widget>[
+                              Icon(Icons.favorite_border, color: Colors.red,size: 20.0,),
+                              Icon(Icons.favorite_border, color: Colors.red,size: 30.0,),
+                              Icon(Icons.favorite_border, color: Colors.red,size: 40.0,),
+                             ],
+                        ),
+                      ),
+                      Container(
+                        child: Row(
+                             children: <Widget>[
+                              Icon(Icons.favorite_border, color: Colors.red,size: 40.0,),
+                              Icon(Icons.favorite_border, color: Colors.red,size: 30.0,),
+                              Icon(Icons.favorite_border, color: Colors.red,size: 20.0,),
+                             ],
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+             
+               ),
+                Image.network("https://cdn-asset.jawapos.com/wp-content/uploads/2019/01/jennie-blackpink-segera-solo-debut-november-ini_m_-640x446.jpg",
+                  fit: BoxFit.cover,
+                ),
               ],
             ),
           ),
